@@ -1,11 +1,26 @@
 {
-  "name": "datocms-instagram-field",
+  "name": "datocms-plugin-instagram-field",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://github.com/bradjenn/datocms-instagram-field",
+  "description": "Display Instagram Posts and all selection into a JSON field",
+  "keywords": [
+    "datocms-plugin",
+    "instagram"
+  ],
+  "datoCmsPlugin": {
+    "title": "Instagram JSON Field",
+    "previewImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png",
+    "entryPoint": "build/index.html",
+    "pluginType": "field_editor",
+    "fieldTypes": [
+      "json"
+    ]
+  },
   "dependencies": {
     "@types/node": "^16.11.19",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/lodash": "^4.14.178",
     "datocms-plugin-sdk": "^0.3.32",
     "datocms-react-ui": "^0.3.32",
     "react": "^17.0.2",
@@ -38,14 +53,7 @@
     ]
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.178",
     "cross-env": "^7.0.3",
     "lodash": "^4.17.21"
-  },
-  "datoCmsPlugin": {
-    "title": "",
-    "previewImage": "",
-    "coverImage": "",
-    "entryPoint": "build/index.html"
   }
 }
