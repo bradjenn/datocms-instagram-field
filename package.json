@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "homepage": "https://github.com/bradjenn/datocms-instagram-field",
   "description": "Display Instagram Posts and all selection into a JSON field",
-  "private": "false",
   "keywords": [
     "datocms-plugin",
     "instagram"
