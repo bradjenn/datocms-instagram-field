@@ -1,0 +1,45 @@
+.inspector {
+  margin-top: var(--spacing-l);
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-column-gap: var(--spacing-m);
+  grid-row-gap: var(--spacing-m);
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+  overflow: auto;
+}
+
+.post {
+  text-align: center;
+  padding: 3px;
+  border-radius: 3px;
+  border: 2px solid var(--border-color);
+  overflow: hidden;
+  cursor: pointer;
+  background-color: transparent;
+  appearance: none;
+  font: inherit;
+}
+
+.post:hover,
+.post--selected {
+  border-color: var(--accent-color);
+}
+
+.post__image {
+  display: block;
+  padding-top: 100%;
+  background-size: cover;
+}
+
+.post__title {
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: var(--spacing-s) 0;
+}
