@@ -1,3 +1,3 @@
-# DatoCms Instagram Field Plugin
+# DatoCms Plugin - Instagram Field
 
 Fetch Instagram Posts and add selected to a json field
