@@ -29,8 +29,6 @@ export default function ConfigScreen({ ctx }: Props) {
     try {
       const newToken = await refreshToken(accessToken);
 
-      console.log(newToken);
-
       updateAccessToken(newToken.access_token);
       updateExpiresIn(newToken.expires_in);
 
